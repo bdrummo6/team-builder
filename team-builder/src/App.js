@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
+import Members from "./components/Members";
+import Heading from "./components/Heading";
 
-    </div>
-  );
-}
+import memberData from "./memberData";
+
+const App = props => {
+
+  const [members, setMembers] = useState(memberData);
+
+  return (
+     <div className="App">
+       <Heading />
+       <Members {...props} members={members}  />
+     </div>
+  )
+};
 
 export default App;
