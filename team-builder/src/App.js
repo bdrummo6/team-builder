@@ -2,18 +2,17 @@ import React, { useState } from 'react';
 
 import './App.css';
 
-import Heading from "./components/Heading";
-import Members from "./components/Members";
 import Form from "./components/Form";
-
+import Members from "./components/Members";
+import Heading from "./components/Heading";
 
 import memberData from "./memberData";
 
 const App = props => {
 
-  const [members, setMembers] = useState(memberData);
+   const [members, setMembers] = useState(memberData);
 
-  const addMember = member => {
+   const addMember = member => {
       const newMember = {
          id: Date.now(),
          name: member.name,
@@ -23,13 +22,14 @@ const App = props => {
 
       setMembers([ ...members, newMember])
    };
+
    return (
-         <div className="App">
+      <div className="App">
          <Heading />
          <Form {...props} addMember={addMember} />
          <Members {...props} members={members}  />
       </div>
    )
-   };
+};
 
 export default App;
