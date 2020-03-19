@@ -45,6 +45,7 @@ const Form = props => {
             placeholder='Full Name'
             value={member.name}
             onChange={event => handleChange(event)}
+            autoFocus='true'
          />
 
          <label htmlFor='emailInput' style={lblStyle}>Email: </label>

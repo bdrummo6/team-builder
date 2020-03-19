@@ -6,7 +6,6 @@ const Members = props => {
       flexDirection: 'column',
       alignContent: 'center',
       justifyContent: 'space-between',
-
    };
 
    const memberStyle = {
