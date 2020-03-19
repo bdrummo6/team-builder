@@ -42,6 +42,7 @@ const Form = props => {
             maxLength='30'
             id='nameInput'
             name='name'
+            placeholder='Full Name'
             value={member.name}
             onChange={event => handleChange(event)}
          />
@@ -52,6 +53,7 @@ const Form = props => {
             maxLength='30'
             id='emailInput'
             name='email'
+            placeholder='name@example.com'
             value={member.email}
             onChange={event => handleChange(event)}
          />
@@ -62,6 +64,7 @@ const Form = props => {
             maxLength='30'
             id='roleInput'
             name='role'
+            placeholder='Team Role'
             value={member.role}
             onChange={event => handleChange(event)}
          />
