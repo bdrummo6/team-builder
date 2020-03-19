@@ -4,7 +4,7 @@ const memberData = [
    {
       id: 1,
       name: 'Brad Drummonds',
-      email: 'brad.drum@email.com',
+      email: 'brad.drummonds@email.com',
       role: 'Team Lead'
    },
    {
