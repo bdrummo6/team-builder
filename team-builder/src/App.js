@@ -22,6 +22,8 @@ const App = props => {
 
       setMembers([ ...members, newMember])
    };
+   
+   document.title = 'Team Builder App';
 
    return (
       <div className="App">
