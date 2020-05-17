@@ -2,7 +2,7 @@ import React from "react";
 
 const Heading = () => {
    const headingStyle = {
-      marginTop: '10px',
+      marginTop: '20px',
       marginBottom: '20px',
       color: '#5F9EA0',
 
@@ -10,7 +10,7 @@ const Heading = () => {
 
    return (
       <header style={headingStyle}>
-         <h1 >Team Updater</h1>
+         <h1>Team Builder</h1>
       </header>
    )
 };
